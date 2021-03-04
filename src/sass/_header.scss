@@ -2,6 +2,14 @@
   font-size: 15px;
   padding: 10px 0;
   border-bottom: 1px solid #2acb352b;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  background: white;
+}
+
+header {
 }
 
 .nav__navigatione {

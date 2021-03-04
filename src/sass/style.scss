@@ -29,6 +29,8 @@
 @import "home";
 @import "advantages";
 @import "supplement";
+@import "video";
+@import "order";
 li {
   list-style-type: none;
 }
@@ -40,4 +42,9 @@ body {
 .container {
   width: 1300px;
   margin: 0 auto;
+}
+
+a:hover {
+  color: #2acb35;
+  background: white;
 }
