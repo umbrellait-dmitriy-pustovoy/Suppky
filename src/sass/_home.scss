@@ -29,3 +29,24 @@
     margin-bottom: 35px;
   }
 }
+
+.home__btns {
+  .home_right__btn a {
+    color: white;
+    &:hover {
+      color: #2acb35;
+    }
+  }
+
+  .home_left__btn a {
+    margin-left: 20px;
+    color: #2acb35;
+    background: white;
+
+    &:hover {
+      color: white;
+      background: #2acb35;
+    }
+  }
+  display: flex;
+}

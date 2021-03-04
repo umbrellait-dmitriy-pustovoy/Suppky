@@ -1,4 +1,5 @@
 .header__padding {
+  font-size: 15px;
   padding: 10px 0;
   border-bottom: 1px solid #2acb352b;
 }
@@ -17,6 +18,13 @@
   & a li:first-child {
     margin-left: 0;
   }
+}
+
+.beforee {
+  width: 1px;
+  height: 30px;
+  background: #d7d7d7;
+  margin: 0 15px;
 }
 
 .navbar_header {
@@ -43,6 +51,9 @@
 .header_action {
   ul {
     display: flex;
+    li a i {
+      width: 14px;
+    }
   }
 }
 
