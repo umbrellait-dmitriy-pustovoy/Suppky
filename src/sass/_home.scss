@@ -1,0 +1,31 @@
+.home__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  img {
+    width: 48%;
+  }
+}
+
+.home__text {
+  width: 48%;
+
+  h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    font-weight: bold;
+    span {
+      color: #2acb35;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #747373;
+    margin-bottom: 35px;
+  }
+}

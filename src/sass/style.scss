@@ -25,3 +25,18 @@
 @import "card";
 @import "prism";
 @import "utilities";
+@import "header";
+@import "home";
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}

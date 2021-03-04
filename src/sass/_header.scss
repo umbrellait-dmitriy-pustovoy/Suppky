@@ -1,0 +1,89 @@
+.header__padding {
+  padding: 10px 0;
+  border-bottom: 1px solid #2acb352b;
+}
+
+.nav__navigatione {
+  display: flex;
+
+  & a {
+    color: black;
+    text-decoration: none;
+    margin-left: 32px;
+  }
+  & a li {
+    list-style-type: none;
+  }
+  & a li:first-child {
+    margin-left: 0;
+  }
+}
+
+.navbar_header {
+  a img {
+    width: 190px;
+  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-icon::before {
+  content: "";
+  position: relative;
+  right: 0;
+  top: 50%;
+  height: 25px;
+  width: 1px;
+  background: #d7d7d7;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.header_action {
+  ul {
+    display: flex;
+  }
+}
+
+.btn {
+  border-radius: 25px;
+
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 16px 40px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all 0.4s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: 2px solid #2acb35;
+  background: #2acb35 none repeat scroll 0 0;
+  text-decoration: none;
+
+  &:hover {
+    background: white;
+  }
+}
+
+.header__btn {
+  a {
+    color: white;
+
+    &:hover {
+      color: #2acb35;
+    }
+  }
+}
+
+.fas.fa-search {
+  color: #2acb35;
+}
+
+.fas.fa-shopping-basket {
+  color: #2acb35;
+}
