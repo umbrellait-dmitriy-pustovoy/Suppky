@@ -9,9 +9,6 @@
   background: white;
 }
 
-header {
-}
-
 .nav__navigatione {
   display: flex;
 
@@ -105,4 +102,20 @@ header {
 
 .fas.fa-shopping-basket {
   color: #2acb35;
+}
+
+.counter {
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  line-height: 15px;
+  font-size: 10px;
+  border-radius: 50%;
+  font-weight: 600;
+  top: -2px;
+  right: -7px;
+  background: #2acb35;
+  color: #fff;
 }

@@ -50,13 +50,7 @@
 
 .order-content {
   width: 38%;
-  p {
-    margin-bottom: 15px;
-    font-size: 18px;
-    line-height: 2;
-    font-weight: 500;
-    color: #747373;
-  }
+
   h3 {
     font-weight: 700;
   }
@@ -92,5 +86,121 @@
   a {
     text-decoration: none;
     color: black;
+  }
+}
+
+.nav_rev {
+  display: none;
+}
+
+.nav_rev:target {
+  display: block;
+}
+
+.DESCRIPTION {
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.required {
+  color: red;
+}
+
+.reviews_tabs {
+  margin-top: 15px;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #545353;
+    font-weight: 700;
+  }
+}
+
+.tab-link:nth-child(2) {
+  margin-left: 10px;
+}
+.reviews__commet {
+  img {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+}
+
+.reviews__content {
+  span {
+    color: #2acb35;
+  }
+  p {
+    strong {
+      color: #3c3444;
+    }
+    span {
+      color: black;
+    }
+  }
+}
+
+#rating {
+  background: #f1f1f1;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+}
+
+.review_form {
+  textarea {
+    width: 100%;
+    padding: 20px 20px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c6c6c;
+  }
+}
+.input_100 {
+  width: 100%;
+  padding: 19px 20px;
+  border: none;
+  background: #f1f1f1;
+  color: #6c6c6c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.comment-form-cookie {
+  display: flex;
+  padding: 0 0;
+}
+
+.form-submit {
+  input {
+    background: #2acb35;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.comment-form-cookie {
+  label {
+    font-size: 16px;
+  }
+}
+
+.ingredients__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    line-height: 28px;
   }
 }

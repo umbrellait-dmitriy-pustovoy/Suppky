@@ -33,9 +33,14 @@ pageTitle: Supky
                 </li>
               </a>
               <span class="beforee"></span>
-              <a href="#">
-                <li>
-                  <a href="#"><i class="fas fa-shopping-basket"></i></a>
+              <a href="#" class="shop-cartd">
+                <li class="shop-cart">
+                  <div class="shop-cartt">
+                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                    <span class="counter">0</span>
+
+                  </div>
+                  
                 </li>
               </a>
             </ul>
@@ -226,13 +231,108 @@ pageTitle: Supky
         <div class="order_btn">
           <a href="#" class="btn">ORDER NOW</a>
         </div>
+
         <div class="product__info">
           <h5>PRODUCT INFO</h5>
           <div class="product__category">
             <span><i>CATEGORY:</i> <a href="#">VIDMEATE CAP</a></span>
           </div>
         </div>
+
+          <div class="nav__reviews">
+
+            <nav class="reviews_tabs">
+              <a  class="tab-link" href="#Description">Description</a>
+              <a class="tab-link" href="#Reviews">Reviews (1)</a>
+            </nav>
+      
+            <div class="reviews__body">
+              <div id="Description" class="DESCRIPTION nav_rev" >
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+              </div>
+
+            <div id="Reviews" class="nav_rev reviews" >
+              <div class="reviews__commet">
+                <img src="img/reviews_girl.jpeg" alt="">
+                <div class="reviews__content">
+                  <span>☆ ☆ ☆ ☆ ☆</span>
+                  <div class="info">
+                    
+                    <p><strong>smith</strong><span>-</span>December 20,2020</p>
+                  </div>
+                  <div class="text">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review_form_wrapper">
+                <div class="review_form">
+                  <span>ADD A REVIEW</span>
+                  <form action="#">
+                    <p class="comment-notes">
+                      <span>Your email address will not be published.</span>
+                      Required fields are marked
+                      <span class="required">*</span>
+                    </p>
+                    <div class="comment-form-rating">
+                      <label for="rating">Your rating 
+                        <span class="required">*</span>
+                      </label>
+                      <select name="rating" id="rating">
+                        <option value="">Rate...</option>
+                        <option value="5">Perfect</option>
+                        <option value="4">Good</option>
+                        <option value="3">Average</option>
+                        <option value="2">Not that bad</option>
+                        <option value="1">Very poor</option>
+                      </select>
+                    </div>
+                    <p class="comment-form-comment">
+                      <label for="comment">
+                        Your review
+                        <span class="required">*</span>
+                      </label>
+                      <textarea name="comment" id="comment" cols="45" rows="8" required></textarea>
+                    </p>
+                    <p class="comment-form-author">
+                      <label for="author">
+                        Name
+                        <span class="required">*</span>
+                      </label>
+                      <input type="text" name="author" id="author" class="input_100">
+                    </p>
+                    <p class="comment-form-email">
+                      <label for="email">
+                        Email
+                        <span class="required">*</span>
+                      </label>
+                      <input type="text" name="email" id="email" class="input_100">
+                    </p>
+                    <p class="comment-form-cookie">
+                      <input type="checkbox" value="yes">
+                      <label for="">Save my name, email, and website in this browser for the next time I comment.</label>
+                    </p>
+                    <p class="form-submit">
+                      <input type="submit" name="submit" class="submit input_100" value="Submit">
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="ingredients">
+  <div class="container">
+    <div class="ingredients__title">
+      <h3>Suppke Ingredients</h3>
+      <div class="bar"></div>
+      <p>There are many variations of passages of Lorem Ipsum that available, but the majority have fered alteration in some form, by injected humour.</p>
     </div>
   </div>
 </section>
