@@ -1,0 +1,35 @@
+.area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: url("../img/area_bg.jpg") no-repeat center;
+}
+
+.area-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left !important;
+}
+
+.area__items {
+  display: flex;
+}
+
+.area__content {
+  span {
+    color: #2acb35;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  p {
+    font-weight: 700;
+    color: white;
+  }
+}
+
+.area__img {
+  margin-right: 30px;
+  img {
+    height: auto;
+  }
+}

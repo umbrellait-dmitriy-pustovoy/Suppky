@@ -1,4 +1,6 @@
 .ingredients {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background: url("../img/ingredients_back.jpg");
 }
 
@@ -8,10 +10,58 @@
   align-items: center;
   flex-direction: column;
   h3 {
-    margin-top: 60px;
     font-size: 36px;
   }
   p {
     line-height: 28px;
+  }
+}
+
+.ingredients__text {
+  width: 700px;
+  text-align: center;
+}
+
+.ingredients__main {
+  display: flex;
+}
+.ingredients__img {
+  width: 45%;
+  margin-right: 20px;
+}
+
+.faq {
+  width: 48%;
+  details {
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      border-top: 1px dashed #d7d7d7;
+    }
+    margin-bottom: 20px;
+    padding: 23px 25px;
+    background: #fff;
+    box-shadow: 0px 0px 70px 0px rgb(45 3 91 / 5%);
+    list-style-type: none;
+    summary {
+      font-size: 20px;
+      color: #3c3444;
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::-moz-list-bullet {
+        list-style-type: none;
+      }
+
+      &::after {
+        float: right;
+        content: "";
+        background: white;
+        border-radius: 50%;
+        font-size: 25px;
+        border: 1px solid black;
+      }
+      // display: block; - не всегда уместно
+    }
   }
 }
