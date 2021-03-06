@@ -216,14 +216,14 @@ pageTitle: Supky
       <p>There are many variations of passages of Lorem Ipsum that available, but the majority have fered alteration in some form, by injected humour.</p>
     </div>
     <div class="order-wrap">
-      <div class="order-img">
-        <div class="active-product">
+      <div class="order-img" data-gallery="order-gallery">
+        <div class="active-product" data-gallery="full">
           <img src="img/order/order1.jpg" alt="">
 
         </div>
-        <div class="product-nav-active">
+        <div class="product-nav-active" data-gallery="preview">
           <img src="img/order/order1.jpg" alt="">
-          <img src="img/order/order2.jpg" alt="">
+          <img src="img/order/order2.jpg" class="kek" alt="">
           <img src="img/order/order3.jpg " alt="">
           <img src="img/order/order4.jpg" alt="">
         </div>
@@ -335,6 +335,14 @@ pageTitle: Supky
     </div>
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", ()=> {
+    let orderGallery = new VanillaGallery({
+      elem: "order-gallery",
+    });
+    console.log("orderGallery", orderGallery)
+  });
+</script>
 
 <section class="ingredients">
   <div class="container">
@@ -551,5 +559,92 @@ pageTitle: Supky
 
 
     </div>
+  </div>
+</section>
+
+<section class="doctors">
+  <div class="container">
+    <div class="doctors-wrap">
+      <div class="doctors__title">
+        <h3>
+          Recommended By Doctors
+        </h3>
+        <div class="bar"></div>
+        <div class="title__text">
+          There are many variations of passages of Lorem Ipsum that available, but the majority have fered alteration in some form, by injected humour..
+        </div>
+      </div>
+      <div class="doctors__container">
+        <div class="left__doctors">
+          <div class="doctors__item">
+            <img
+              src="img/doctors/avatar1.jpg"
+              alt=""
+              class="doctors__img"
+            />
+            <div class="doctors__content">
+              <h3 class="doctors__label">Alexander Graham</h3>
+              <p class="doctors__text">
+                Vidmateth that availblut the majoriy have sufferd alterat some
+                form huour the and ransed words which don't look even slightly
+                belieblegg to passage
+              </p>
+              <p class="doctors__position">- Heart Specialist</p>
+            </div>
+          </div>
+          <div class="doctors__item">
+            <img
+              src="img/doctors/avatar2.jpg"
+              alt=""
+              class="doctors__img"
+            />
+            <div class="doctors__content">
+              <h3 class="doctors__label">Dorehe Angle</h3>
+              <p class="doctors__text">
+                Vidmateth that availblut the majoriy have sufferd alterat some
+                form huour the and ransed words which don't look even slightly
+                belieblegg to passage
+              </p>
+              <p class="doctors__position">- Heart Specialist</p>
+            </div>
+          </div>
+        </div>
+        <div class="right__doctors">
+          <div class="doctors__item">
+            <img
+              src="img/doctors/avatar3.jpg"
+              alt=""
+              class="doctors__img"
+            />
+            <div class="doctors__content">
+              <h3 class="doctors__label">Tomas Alexander</h3>
+              <p class="doctors__text">
+                Vidmateth that availblut the majoriy have sufferd alterat some
+                form huour the and ransed words which don't look even slightly
+                belieblegg to passage
+              </p>
+              <p class="doctors__position">- Heart Specialist</p>
+            </div>
+          </div>
+          <div class="doctors__item">
+            <img
+              src="img/doctors/avatar4.jpg"
+              alt=""
+              class="doctors__img"
+            />
+            <div class="doctors__content">
+              <h3 class="doctors__label">Alexander Graham</h3>
+              <p class="doctors__text">
+                Vidmateth that availblut the majoriy have sufferd alterat some
+                form huour the and ransed words which don't look even slightly
+                belieblegg to passage
+              </p>
+              <p class="doctors__position">- Neurologist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
   </div>
 </section>

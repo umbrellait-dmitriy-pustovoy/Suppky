@@ -200,6 +200,10 @@
 
   img {
     width: 23.5%;
+    border: 3px solid transparent;
+    &.active {
+      border: 3px solid tomato;
+    }
   }
 }
 
