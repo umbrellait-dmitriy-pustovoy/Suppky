@@ -1,5 +1,12 @@
 .order-wrap {
   display: flex;
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    .container {
+      margin: 0 auto;
+    }
+  }
 }
 
 .order_title {
@@ -15,6 +22,17 @@
     width: 52%;
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+  @media (max-width: 992px) {
+    h3 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+      color: #747373;
+      width: 560px;
+      line-height: 28px;
+    }
   }
 }
 
@@ -46,13 +64,31 @@
 
 .order-img {
   margin-right: 50px;
+  @media (max-width: 992px) {
+    margin: 0 auto;
+  }
 }
 
 .order-content {
   width: 38%;
-
   h3 {
     font-weight: 700;
+  }
+  @media (max-width: 992px) {
+    width: 95%;
+    margin: 0 auto;
+    h3 {
+      margin-top: 25px;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #747373;
+      margin-bottom: 41px;
+      line-height: 26px;
+    }
   }
 }
 

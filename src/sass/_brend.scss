@@ -5,4 +5,9 @@
     display: flex;
     justify-content: space-around;
   }
+  @media (max-width: 992px) {
+    .brends__item5 {
+      display: none;
+    }
+  }
 }

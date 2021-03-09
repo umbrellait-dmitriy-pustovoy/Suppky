@@ -21,6 +21,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__content {
@@ -33,6 +36,11 @@
   &__item {
     img {
       width: 100%;
+    }
+    @media (max-width: 992px) {
+      &:last-child {
+        margin-top: 30px;
+      }
     }
   }
 

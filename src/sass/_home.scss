@@ -7,6 +7,14 @@
   img {
     width: 48%;
   }
+
+  @media (max-width: 992px) {
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    img {
+      width: 570px;
+    }
+  }
 }
 .nav__navigatione {
   a:hover {
@@ -17,6 +25,13 @@
 .home__text {
   width: 48%;
 
+  @media (max-width: 992px) {
+    width: 610px;
+    text-align: center;
+    h1 {
+      font-size: 54px;
+    }
+  }
   h1 {
     font-size: 65px;
     line-height: 1.2;
@@ -36,6 +51,11 @@
 }
 
 .home__btns {
+  @media (max-width: 992px) {
+    display: flex;
+    justify-content: center;
+    width: 610px;
+  }
   .home_right__btn a {
     color: white;
     &:hover {
