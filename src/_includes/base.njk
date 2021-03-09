@@ -17,7 +17,11 @@
     <meta name="description" content="{{ pageDescription }}" />
     <link rel="icon" href="{{ '/favicon.png' | url }}" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
     <meta name="twitter:card" content="summary_large_image" />
     {% if meta.twitterUsername %}
@@ -40,6 +44,9 @@
   </head>
   <body>
     {{ content | safe }}
-    <script src="/js/gallery.js"></script>
+
+    <script src="/js/scroll.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
   </body>
 </html>

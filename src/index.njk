@@ -1,8 +1,6 @@
 ---
 layout: base.njk
 pageTitle: Supky
----
-
 <header>
   <div class="header__padding">
     <div class="container">
@@ -276,7 +274,9 @@ pageTitle: Supky
               </div>
               <div class="review_form_wrapper">
                 <div class="review_form">
-                  <span>ADD A REVIEW</span>
+                  <div class="text__info__review">
+                    <span>ADD A REVIEW</span>
+                  </div>
                   <form action="#">
                     <p class="comment-notes">
                       <span>Your email address will not be published.</span>
@@ -740,21 +740,100 @@ pageTitle: Supky
 </section>
 
 <section class="form-news" id="form-news">
-  <div class="form-news__main-container">
-    <form class="form-news__container" action="#" class="">
-      <div class="form-news__header">
-        <h3 class="form-news__title">Newsletter Sign Up</h3>
-        <p class="form-news__subtitle">Notifications our best deals...</p>
-      </div>
-      <div class="form-news__content">
-        <input
-          type="text"
-          required
-          class="form-news__input"
-          placeholder="Your email address"
-        />
-        <button class="form-news__submit">Subscribe</button>
-      </div>
-    </form>
+  <div class="container">
+    <div class="form-news__main-container">
+      <form class="form-news__container" action="#" class="">
+        <div class="form-news__header">
+          <h3 class="form-news__title">Newsletter Sign Up</h3>
+          <p class="form-news__subtitle">Notifications our best deals...</p>
+        </div>
+        <div class="form-news__content">
+          <input
+            type="text"
+            required
+            class="form-news__input"
+            placeholder="Your email address"
+          />
+          <button class="form-news__submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
+
+
+<footer>
+  <div class="footer">
+
+    <div class="container">
+      <div class="footer__widget">
+        <a href="#" class="logo">
+          <img src="img/Logo_2.png" alt="">
+        </a>
+        <p>Orem Ipsum is simply dumm text the printing and types indstr sum has been the industry
+        </p>
+        <div class="footer__social">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__recent">
+        <h4>Recent posts</h4>
+        <div class="recent__items">
+          <img src="img/blogs/blog1.jpg" alt="">
+          <div class="info">
+            <a href="#">Homeopathic consultation Acupunc</a>
+            <p>December 20, 2020</p>
+          </div>
+        </div>
+        <div class="recent__items">
+          <img src="img/blogs/blog2.jpg" alt="">
+          <div class="info">
+            <a href="#">Supplementing Your Diet</a>
+            <p>December 20, 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Useful Links</h4>
+        <a href="#">
+          About
+        </a>
+        <a href="#">
+          Privacy Policy
+        </a>
+        <a href="#">
+          Refund
+        </a>
+        <a href="#">
+          Terms & Conditions
+        </a>
+      </div>
+      <div class="footer__send">
+        <h4>Send Your Massage</h4>
+        <input type="text" class="email" placeholder="Your E-mail">
+        <textarea class="massage" placeholder="Your Massage"></textarea>
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<section class="coopyrght">
+  <div class="container">
+    <div class="coop__text">
+      Copyright © 2021 suppke All Rights Reserved.
+    </div>
+  </div>
+</section>
+<a class="up_down_btn" title="Наверх">&uarr;</a>
