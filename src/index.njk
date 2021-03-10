@@ -1,7 +1,9 @@
 ---
 layout: base.njk
 pageTitle: Supky
-<header class="header">
+---
+
+<header>
   <div class="header__padding">
     <div class="container">
       <div class="main_menu">
@@ -35,12 +37,9 @@ pageTitle: Supky
                 <li class="shop-cart">
                   <div class="shop-cartt">
                     <a href="#"><i class="fas fa-shopping-basket"></i>
-                      <span class="counter">0</span>
-                      <div class="header__basket">
-                        <p class="header__basket-title">Your cart is empty.</p>
-                      </div>
-
+                    <span class="counter">0</span>
                     </a>
+
                   </div>
                   
                 </li>
@@ -278,9 +277,7 @@ pageTitle: Supky
               </div>
               <div class="review_form_wrapper">
                 <div class="review_form">
-                  <div class="text__info__review">
-                    <span>ADD A REVIEW</span>
-                  </div>
+                  <span>ADD A REVIEW</span>
                   <form action="#">
                     <p class="comment-notes">
                       <span>Your email address will not be published.</span>
@@ -339,7 +336,14 @@ pageTitle: Supky
     </div>
   </div>
 </section>
-
+<script>
+  document.addEventListener("DOMContentLoaded", ()=> {
+    let orderGallery = new VanillaGallery({
+      elem: "order-gallery",
+    });
+    console.log("orderGallery", orderGallery)
+  });
+</script>
 
 <section class="ingredients">
   <div class="container">
@@ -483,7 +487,7 @@ pageTitle: Supky
       </div>
 
 
-      <div class="price_cart cart_2">
+      <div class="price_cart">
         <div class="price__head">
           <div class="price__icon">
             <img src="https://themebeyond.com/demo/suplive/wp-content/uploads/2020/12/02.png" alt="">
@@ -572,7 +576,6 @@ pageTitle: Supky
         </div>
       </div>
       <div class="doctors__container">
-
           <div class="doctors__item">
             <img
               src="img/doctors/avatar1.jpg"
@@ -588,7 +591,7 @@ pageTitle: Supky
               </p>
               <p class="doctors__position">- Heart Specialist</p>
             </div>
-
+          </div>
           <div class="doctors__item">
             <img
               src="img/doctors/avatar2.jpg"
@@ -605,7 +608,6 @@ pageTitle: Supky
               <p class="doctors__position">- Heart Specialist</p>
             </div>
           </div>
-        </div>
 
           <div class="doctors__item">
             <img
@@ -717,19 +719,19 @@ pageTitle: Supky
 <section class="brends">
   <div class="container">
     <div class="brends-wrap">
-      <div class="brends__item1">
+      <div class="brends__item">
         <img src="img/brends/brends1.png" alt="">
       </div>
-      <div class="brends__item2">
+      <div class="brends__item">
         <img src="img/brends/brends2.png" alt="">
       </div>
-      <div class="brends__item3">
+      <div class="brends__item">
         <img src="img/brends/brends3.png" alt="">
       </div>
-      <div class="brends__item4">
+      <div class="brends__item">
         <img src="img/brends/brends4.png" alt="">
       </div>
-      <div class="brends__item5">
+      <div class="brends__item">
         <img src="img/brends/brends5.png" alt="">
       </div>
     </div>
@@ -758,77 +760,80 @@ pageTitle: Supky
   </div>
 </section>
 
-
-<footer>
-  <div class="footer">
-
-    <div class="container">
-      <div class="footer__widget">
-        <a href="#" class="logo">
-          <img src="img/Logo_2.png" alt="">
-        </a>
-        <p>Orem Ipsum is simply dumm text the printing and types indstr sum has been the industry
-        </p>
-        <div class="footer__social">
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-pinterest-p"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+<section class="links">
+  <div class="container">
+    <div class="links__social">
+      <img src="img/Logo_2.png" alt="">
+      <p>Orem Ipsum is simply dumm text the printing and types indstr sum has been the industry</p>
+      <ul class="links__soc-container">
+        <li class="footer__soc">
+          <a href="#" class="links__soc-link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li class="links__soc">
+          <a href="#" class="links__soc-link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="links__soc">
+          <a href="#" class="links__soc-link"
+            ><i class="fab fa-pinterest-p"></i
+          ></a>
+        </li>
+        <li class="links__soc">
+          <a href="#" class="links__soc-link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="links__post">
+      <h4>Recent Posts</h4>
+      <div class="post__item">
+        <img src="img/post/post1.jpg" alt="">
+        <div class="post__text">
+          <a href="#">Homeopathic consultation Acupunc</a>
+          <p>December 20, 2020</p>
         </div>
       </div>
-      <div class="footer__recent">
-        <h4>Recent posts</h4>
-        <div class="recent__items">
-          <img src="img/blogs/blog1.jpg" alt="">
-          <div class="info">
-            <a href="#">Homeopathic consultation Acupunc</a>
-            <p>December 20, 2020</p>
-          </div>
+      <div class="post__item">
+        <img src="img/post/post2.jpg" alt="">
+        <div class="post__text">
+          <a href="#">Supplementing Your Diet</a>
+          <p>December 20, 2020</p>
         </div>
-        <div class="recent__items">
-          <img src="img/blogs/blog2.jpg" alt="">
-          <div class="info">
-            <a href="#">Supplementing Your Diet</a>
-            <p>December 20, 2020</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer__links">
-        <h4>Useful Links</h4>
-        <a href="#">
-          About
-        </a>
-        <a href="#">
-          Privacy Policy
-        </a>
-        <a href="#">
-          Refund
-        </a>
-        <a href="#">
-          Terms & Conditions
-        </a>
-      </div>
-      <div class="footer__send">
-        <h4>Send Your Massage</h4>
-        <input type="text" class="email" placeholder="Your E-mail">
-        <textarea class="massage" placeholder="Your Massage"></textarea>
-        <button class="btn">Submit</button>
       </div>
     </div>
-  </div>
-</footer>
-<section class="coopyright">
-  <div class="container">
-    <div class="coop__text">
-      Copyright © 2021 suppke All Rights Reserved.
+    <div class="links__useful">
+      <h4>Useful Links</h4>
+      <a href="#">
+        About
+      </a>
+      <a href="#">
+        Privacy Policy
+      </a>
+      <a href="#">
+        Refund
+      </a>
+      <a href="#">
+        Terms & Conditions
+      </a>
+    </div>
+    <div class="links__send-form">
+      <h4>Send Your Massage</h4>
+      <form action="#">
+        <input type="text" name="email" placeholder="Your E-mail">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <button type="submit" class="links_btn">SUBMIT</button>
+      </form>
     </div>
   </div>
 </section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__text">
+      Copyright © 2021 suppke All Rights Reserved.
+    </div>
+  </div>
+</footer>

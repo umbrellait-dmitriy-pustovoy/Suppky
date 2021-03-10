@@ -51,9 +51,8 @@
     height: 8px;
     width: 8px;
     border-radius: 50%;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-name: slide;
+    animation: bar 4s linear infinite;
+    background: #2acb35;
   }
 }
 

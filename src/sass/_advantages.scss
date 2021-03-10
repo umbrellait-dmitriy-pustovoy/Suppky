@@ -54,6 +54,11 @@
 }
 
 .advantages__item {
+  &:hover {
+    img {
+      transform: rotateY(360deg);
+    }
+  }
   h5 {
     font-size: 17px;
     margin-bottom: 10px;
