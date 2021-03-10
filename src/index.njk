@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 pageTitle: Supky
-<header>
+<header class="header">
   <div class="header__padding">
     <div class="container">
       <div class="main_menu">
@@ -34,9 +34,13 @@ pageTitle: Supky
               <a href="#" class="shop-cartd">
                 <li class="shop-cart">
                   <div class="shop-cartt">
-                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
-                    <span class="counter">0</span>
+                    <a href="#"><i class="fas fa-shopping-basket"></i>
+                      <span class="counter">0</span>
+                      <div class="header__basket">
+                        <p class="header__basket-title">Your cart is empty.</p>
+                      </div>
 
+                    </a>
                   </div>
                   
                 </li>
@@ -335,14 +339,7 @@ pageTitle: Supky
     </div>
   </div>
 </section>
-<script>
-  document.addEventListener("DOMContentLoaded", ()=> {
-    let orderGallery = new VanillaGallery({
-      elem: "order-gallery",
-    });
-    console.log("orderGallery", orderGallery)
-  });
-</script>
+
 
 <section class="ingredients">
   <div class="container">
@@ -827,13 +824,11 @@ pageTitle: Supky
       </div>
     </div>
   </div>
-
 </footer>
-<section class="coopyrght">
+<section class="coopyright">
   <div class="container">
     <div class="coop__text">
       Copyright © 2021 suppke All Rights Reserved.
     </div>
   </div>
 </section>
-<a class="up_down_btn" title="Наверх">&uarr;</a>

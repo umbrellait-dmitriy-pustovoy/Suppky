@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", () => {
+  let orderGallery = new VanillaGallery({
+    elem: "order-gallery",
+  });
+  console.log("orderGallery", orderGallery);
+});
+
 let VanillaGallery = function (options) {
   let rootSelector = `[data-gallery="${options.elem}"]`;
   let fullImageSelector = `[data-gallery="full"]`;
@@ -34,3 +41,34 @@ let VanillaGallery = function (options) {
 
   console.log("fullImageElem:", fullImageElem);
 };
+
+const header = document.querySelector(".header");
+
+const btnUp = document.querySelector(".btn-up");
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY >= 300) {
+    header.classList.add("header_stick");
+    btnUp.classList.add("btn-up_visible");
+  } else {
+    btnUp.classList.remove("btn-up_visible");
+    header.classList.remove("header_stick");
+  }
+
+  const rect = timersSection.getBoundingClientRect();
+
+  if (rect.y <= rect.height * 2.5) {
+    if (startTimers) {
+      setTime(timerPackage, 0, 10, 1, 3560);
+      setTime(timerCountries, 0, 5, 40, 195);
+      setTime(timerCustomer, 0, 5, 15, 445);
+      setTime(timerYear, 0, 1, 15, 99);
+      startTimers = false;
+    }
+  }
+});
+
+if (window.scrollY >= 300) {
+  header.classList.add("header_stick");
+  btnUp.classList.add("btn-up_visible");
+}

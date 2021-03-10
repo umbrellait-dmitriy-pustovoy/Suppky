@@ -38,6 +38,7 @@
       width: 100%;
     }
     @media (max-width: 992px) {
+      margin: 0 auto;
       &:last-child {
         margin-top: 30px;
       }
