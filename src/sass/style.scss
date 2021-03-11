@@ -71,27 +71,21 @@ html {
 
 .arrowUp {
   position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  height: 4rem;
-  width: 4rem;
-  padding: 1rem;
+  z-index: 30;
+  background: #2acb35;
+  bottom: 50px;
+  right: 30px;
+  width: 50px;
+  text-align: center;
   border-radius: 50%;
-  z-index: 30;
-  cursor: pointer;
-  background-size: contain;
-  background-position: center;
-  z-index: 30;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
-}
-
-.arrowUp.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.arrowUp:hover {
-  background-position: 100% 0;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  line-height: 48px;
+  i {
+    color: white;
+  }
+  &:hover {
+    background: #2acb35;
+  }
 }

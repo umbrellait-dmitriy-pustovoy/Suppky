@@ -42,8 +42,14 @@ let VanillaGallery = function (options) {
   console.log("fullImageElem:", fullImageElem);
 };
 
-const arrowUp = document.querySelector(".arrowUp");
+window.onscroll = function () {
+  scrollFunction();
+};
 
-window.addEventListener("arrowUp", () => {
-  arrowUp.classList.toggle("active", window.scrollY > 200);
-});
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("arrowUp").style.display = "block";
+  } else {
+    document.getElementById("arrowUp").style.display = "none";
+  }
+}
