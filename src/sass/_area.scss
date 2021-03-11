@@ -19,6 +19,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__items {
     position: relative;

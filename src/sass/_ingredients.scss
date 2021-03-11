@@ -2,6 +2,11 @@
   padding-top: 120px;
   padding-bottom: 120px;
   background: url("../img/ingredients_back.jpg");
+  .container {
+    @media (max-width: 767px) {
+      max-width: 540px;
+    }
+  }
 }
 
 .ingredients__title {
@@ -20,6 +25,10 @@
 .ingredients__text {
   width: 700px;
   text-align: center;
+  p {
+    font-size: 14px;
+    color: #747373;
+  }
 }
 
 .ingredients__main {
@@ -36,6 +45,11 @@
       img {
         max-width: 100%;
       }
+    }
+  }
+  @media (max-width: 767px) {
+    img {
+      margin-bottom: 50px;
     }
   }
 }
@@ -91,5 +105,8 @@
     }
   }
   @media (max-width: 992px) {
+  }
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
