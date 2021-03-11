@@ -46,10 +46,16 @@ window.onscroll = function () {
   scrollFunction();
 };
 
+const header = document.querySelector(".header");
+
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("arrowUp").style.display = "block";
+    document.addEventListener("scroll", () => {
+      header.classList.add("header__stick");
+    });
   } else {
     document.getElementById("arrowUp").style.display = "none";
+    header.classList.remove("header__stick");
   }
 }
