@@ -65,66 +65,33 @@ label {
   font-size: 14px;
   font-weight: 400;
 }
+html {
+  scroll-behavior: smooth;
+}
 
-.up_down_btn {
+.arrowUp {
   position: fixed;
-  bottom: 80px;
-  right: 40px;
-  z-index: 9999;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  background: #f5f5f5;
-  color: #444;
-  cursor: pointer;
-  border-radius: 2px;
-  display: none;
-}
-
-.up_down_btn:hover {
-  text-decoration: none;
-  background: #e9ebec;
-}
-
-.up_down_btn-show {
-  display: block;
-}
-
-.up_down_btn-disabled {
-  pointer-events: none;
-  cursor: default;
-  opacity: 0;
-}
-
-.btn-up {
-  position: fixed;
-  z-index: 20;
-  background: #2acb35;
-  height: 50px;
-  width: 50px;
-  right: 30px;
-  bottom: 50px;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
+  bottom: 4rem;
+  right: 4rem;
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-decoration: none;
-  opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  z-index: 30;
   cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  z-index: 30;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
-.btn-up_visible {
+.arrowUp.active {
   opacity: 1;
+  visibility: visible;
+}
+
+.arrowUp:hover {
+  background-position: 100% 0;
 }

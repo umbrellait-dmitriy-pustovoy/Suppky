@@ -1,4 +1,8 @@
 .blogs {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
   padding-top: 120px;
   padding-bottom: 120px;
   &__title {
@@ -23,6 +27,7 @@
     column-gap: 30px;
     @media (max-width: 992px) {
       grid-template-columns: 1fr 1fr;
+      max-width: 720px;
     }
   }
 
