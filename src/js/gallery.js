@@ -46,16 +46,16 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-const header = document.querySelector(".header");
+const header = document.querySelector(".header__padding");
 
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("arrowUp").style.display = "block";
     document.addEventListener("scroll", () => {
-      header.classList.add("header__stick");
+      header.classList.add("header_stick");
     });
   } else {
     document.getElementById("arrowUp").style.display = "none";
-    header.classList.remove("header__stick");
+    header.classList.remove("header_stick");
   }
 }
