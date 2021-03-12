@@ -12,8 +12,12 @@
   padding: 0;
   border-bottom: 1px solid #2acb352b;
   background: white;
+  .container {
+    @media (max-width: 1024px) {
+      max-width: 960px;
+    }
+  }
 }
-
 // .header__padding {
 //   font-size: 15px;
 //   padding: 10px 0;
@@ -124,6 +128,9 @@
       color: #2acb35;
     }
   }
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .shop-cartt {
@@ -185,4 +192,10 @@
 .basket_type {
   color: #2acb35;
   line-height: 30px;
+}
+
+.nav_links {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
