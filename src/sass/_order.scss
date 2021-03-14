@@ -38,6 +38,11 @@
       line-height: 28px;
     }
   }
+  @media (max-width: 576px) {
+    p {
+      width: 100%;
+    }
+  }
 }
 
 .bar {
@@ -245,7 +250,7 @@
 .product-nav-active {
   display: flex;
   justify-content: space-around;
-  width: 720px;
+  max-width: 720px;
   margin-top: 20px;
 
   img {

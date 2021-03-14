@@ -13,4 +13,14 @@
       display: none;
     }
   }
+  @media (max-width: 760px) {
+    .brends__item3 {
+      display: none;
+    }
+  }
+  @media (max-width: 425px) {
+    .brends__item2 {
+      display: none;
+    }
+  }
 }

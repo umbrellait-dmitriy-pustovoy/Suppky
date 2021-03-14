@@ -26,6 +26,9 @@
       color: #fff;
       text-align: center;
     }
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
   .title__text {
     line-height: 28px;

@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .pacages__content {
@@ -41,12 +42,15 @@
 }
 
 .packages__text {
+  width: 700px;
   font-size: 14px;
   text-align: center;
-  width: 700px;
   line-height: 25px;
   color: #747373;
   font-weight: 500;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 .price__icon {
   display: flex;
