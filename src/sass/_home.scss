@@ -20,6 +20,10 @@
       width: 510px;
     }
   }
+  @media (max-width: 425px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .nav__navigatione {

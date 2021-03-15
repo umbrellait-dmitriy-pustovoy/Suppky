@@ -48,6 +48,9 @@
     border: 1px solid #f3f3f3;
     border-top: none;
     background: #fff;
+    @media (max-width: 425px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__item {

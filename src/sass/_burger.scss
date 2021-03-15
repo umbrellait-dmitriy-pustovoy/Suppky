@@ -37,6 +37,12 @@
 
 .nav.expanded {
   left: 60%;
+  @media screen and (max-width: 425px) {
+    left: 35%;
+  }
+  @media screen and (max-width: 320px) {
+    left: 10%;
+  }
 }
 
 .nav ul {
@@ -65,8 +71,12 @@
     display: block;
   }
   border: 2px solid #2acb35;
+  background: white;
   i {
     color: #2acb35;
+  }
+  @media (max-width: 425px) {
+    right: 2rem;
   }
 }
 
