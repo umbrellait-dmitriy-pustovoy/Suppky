@@ -55,16 +55,19 @@
   user-select: none;
   cursor: pointer;
   height: 2rem;
-  right: 5px;
+  right: 5rem;
   position: fixed;
   top: 5px;
-  width: 34px;
+  width: 40px;
   z-index: 10000;
   display: none;
   @media (max-width: 968px) {
     display: block;
   }
   border: 2px solid #2acb35;
+  i {
+    color: #2acb35;
+  }
 }
 
 .nav-toggle:hover {

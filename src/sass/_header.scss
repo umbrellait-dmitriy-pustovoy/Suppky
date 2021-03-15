@@ -16,6 +16,10 @@
     @media (max-width: 1024px) {
       max-width: 960px;
     }
+    @media (max-width: 768px) {
+      max-width: 650px;
+      height: 7vh;
+    }
   }
 }
 // .header__padding {

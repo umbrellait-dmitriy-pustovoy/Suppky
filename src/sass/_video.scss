@@ -18,41 +18,53 @@
   }
 }
 
-.video_play {
+.video__play {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+  background: #2acb35;
+  border: none;
+  outline: none;
   margin-bottom: 45px;
-  a {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    color: #fff;
-    margin: 0 auto;
-    position: relative;
-    font-size: 18px;
-    background: #2acb35 none repeat scroll 0 0;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      transition: background-color 0.25s ease-out;
-      background-color: #fff;
-      animation: 2s 0s both ease-out infinite;
-      animation-play-state: running;
-      z-index: -1;
-    }
-    &:hover {
-      color: #fff;
-      background: #2acb35;
-    }
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .video__play {
+    margin-bottom: 50px;
   }
+}
+
+.video__play::before,
+.video__play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #fff;
+  -webkit-animation: pulsation 2s 0.8s ease-out infinite;
+  animation: pulsation 2s 0.8s ease-out infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  z-index: -1;
+}
+
+.video__play::before {
+  -webkit-animation: pulsation 2s 0.1s both ease-out infinite;
+  animation: pulsation 2s 0.1s both ease-out infinite;
 }
 
 .suppke-wrap {
